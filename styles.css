@@ -79,14 +79,18 @@ p {
 
 /* Testimonials */
 #testimonials {
-  height: 360px;
+  height: 380px;
   background-image: url("images/cubic-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+}
+
+#testimonials img {
+  opacity: .45;
+  margin: 1.25rem;
 }
 
 .quoteBox {
-  height: 275px;
   max-width: 700px;
   background-color: white;
   margin: auto;
@@ -107,9 +111,20 @@ p {
 /* boostBusiness */
 #boostBusiness {
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 9.5rem;
 }
 
+#boostBusiness>div {
+  max-width: 960px;
+  margin: auto;
+}
+
+footer {
+  height: 80px;
+  margin-top: 6rem;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
 
 
 
@@ -127,13 +142,14 @@ p {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: white;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   height: var(--nav-bar-height);
   z-index: 10;
   padding-left: 1rem;
+  padding-right: 2rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  text-align: right;
 }
 
 /* Style the links inside the navigation bar */
