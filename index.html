@@ -13,19 +13,17 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli:300|Poppins:500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Poppins:500,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="topnav" id="myTopnav">
-      <a href="#home"><img src="images/brave-logotype-dark.svg" height="30px"></img></a>
-      <!--
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+  <nav class="topnav" id="myTopnav">
+    <div class="topnavContent">
+      <a href="#home"><img src="images/brave-logotype-dark.svg" height="30px" id="logo"></img></a>
+      <span class="subtitle">Ads</span>
       <div class="dropdown">
         <button class="dropbtn">Dropdown
           <i class="fa fa-caret-down"></i>
@@ -36,76 +34,83 @@
           <a href="#">Link 3</a>
         </div>
       </div> 
-      <a href="#about">About</a>
-      -->
-      <button class="basicButton">Start now</button>
-      <span>Login</span>
+      <div class="accessPoints">
+        <a href="#"><button class="basicButton id=" startNow">Start now</button></a>
+        <a href="#" id="login">Log in</a>
+      </div>
       <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
     </div>
+  </nav>
 
-    <section id="splash">
-      <div>
-        <h1>Expand your business with Brave Ads</h1>
-        <p>Get your product in the eyes of valuable audiences,
-          with the world's first global ad platform built on privacy.
-        </p>
-        <button class="basicButton">Start now</button>
-        <p>Watch the video
-        </p>
-      </div>
-    </section>
+  <section id="splash">
+    <div>
+      <h1>Expand your business with Brave Ads</h1>
+      <p>Get your product in the eyes of valuable audiences,
+        with the world's first global ad platform built on privacy.
+      </p>
+      <button class="basicButton">Start now</button>
+      <p>Watch the video
+      </p>
+    </div>
+  </section>
 
-    <section id="adFormats">
-      <div id="powerfulAdFormats">
-        <h1>Powerful ad formats</h1>
-        <p>Communicate your message via attention-grabbing mobile and desktop notifications.</p>
-      </div>
-    </section>
+  <section id="adFormats">
+    <div id="powerfulAdFormats">
+      <h1>Powerful ad formats</h1>
+      <p>Communicate your message via attention-grabbing mobile and desktop notifications.</p>
+    </div>
+  </section>
 
-    <section id="benefits">
-      <div>
-        <h1>Be part of the future of advertising</h1>
-        <p>Boost sales, receive more visits and raise brand awareness like never before — all while protecting user privacy.</p>
-      </div>
+  <section id="benefits">
+    <div>
+      <h1>Be part of the future of advertising</h1>
+      <p>Boost sales, receive more visits and raise brand awareness like never before — all while protecting user
+        privacy.</p>
+    </div>
 
-      <div>
+    <div>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="testimonials">
+  <div id="testimonialsBG">
+  </div>
+
+  <section id="testimonials">
+    <div class="quoteBoxWrapper">
       <div class="quoteBox">
         <h2>Join the brands already succeeding with Brave Ads</h2>
-        <p class="testimonialText">As a company focused on helping brands create websites, software, and campaigns, we were very interested in running ads on Brave. The results we’re seeing to date have exceeded our expectations.”
-        </p>
-        <p>
-          <br/>
-          Jesse Parenteau, CEO at Ettrics
+        <div class="testimonialText">"As a company focused on helping brands create websites, software, and campaigns,
+          we were very interested in running ads on Brave. The results we’re seeing to date have exceeded our
+          expectations.”</div>
+        <p class="testimonialPerson">Jesse Parenteau, CEO at <a href="https://ettrics.com" target="_blank">Ettrics</a>
         </p>
         <div class="brandLogos">
-          <img src="images/Intel.png" height="30px"></img>
-          <img src="images/Pizzahut.png" height="30px"></img>
+          <img src="images/Intel.png" height="40px"></img>
+          <img src="images/Pizzahut.png" height="40px"></img>
           <img src="images/Barrons.png" height="18px"></img>
-          <img src="images/eToro.png" height="30px"></img>
-          <img src="images/HomeChef.png" height="30px"></img>
+          <img src="images/eToro.png" height="28px"></img>
+          <img src="images/HomeChef.png" height="40px"></img>
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="boostBusiness">
-      <div>
-        <h1>I'm ready to boost my business</h1>
-        <p>Hit your targets and be part of something new.</p>
-        <button class="basicButton">Start now</button>
-        <p class="notice">The current minimum campaign spend requirement for Brave Ads is $2,500 per month. Advertisers who would prefer to run smaller campaigns can join our waitlist and be notified when our self-serve platform becomes available in 2020.</p>
-      </div>
+      <h1>I'm ready to boost my business</h1>
+      <p>Hit your targets and be part of something new.</p>
+      <button class="basicButton">Start now</button>
+      <small class="notice">The current minimum campaign spend requirement for Brave Ads is $2,500 per month. Advertisers
+        who would prefer to run smaller campaigns can join our waitlist and be notified when our self-serve platform
+        becomes available in 2020.</small>
     </section>
+  </section>
 
-    <footer>
+  <footer>
 
-    </footer>
-  
+  </footer>
+
   <script src="js.js" async defer></script>
+  <script src="drift-chatbox.js" async defer></script>
 </body>
 
 </html>
