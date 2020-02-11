@@ -2,15 +2,128 @@
 
 body { 
   margin: 0;
+  font-family: 'Muli', sans-serif; 
 }
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+:root {
+  --nav-bar-height: 60px;
+}
+
+
+#splash h1 {
+  color: white;
+  margin-top: var(--nav-bar-height);
+}
+
+#splash p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#boostBusiness {
+  text-align: center;
+}
+
+.basicButton {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-color: #fb542b;
+  padding: .5em;
+  padding-right: 1.6em;
+  padding-left: 1.6em;
+  border-radius: 30px;
+  border: none;
+}
+
+
 
 /* === Sections === */
 
+
+/* Splash */
 #splash {
   display: grid;
-  height: 700px;
-  background: red;
+  height: 500px;
+  background: url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
+
+/* AdFormats */
+#adFormats {
+  height: 400px;
+  text-align: center;
+  padding-top: 1.75rem;
+}
+
+#adFormats p {
+  color:#232323;
+}
+
+/* Benefits */
+#benefits {
+  height: 400px;
+  background: #f9f9f9;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 400px;
+  background-image: url("images/cubic-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6rem;
+}
+
+.quoteBox {
+  height: 300px;
+  max-width: 700px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  bottom: -120px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 23.28px 0.72px rgba(0, 0, 0, 0.11);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.testimonialText {
+  margin-top: 1.5rem;
+  color: rgb(166, 166, 166);
+  line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* === Navbar === */
 
@@ -18,6 +131,9 @@ body {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: var(--nav-bar-height);
 }
 
 /* Style the links inside the navigation bar */
