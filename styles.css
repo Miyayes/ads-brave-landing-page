@@ -64,10 +64,16 @@ small {
 
 /* === Sections === */
 
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 980px;
+  margin: auto;
+}
+
 
 /* Splash */
 #splash {
-  display: grid;
   height: 500px;
   background: url("images/hero-bg.jpg");
   background-size: cover;
