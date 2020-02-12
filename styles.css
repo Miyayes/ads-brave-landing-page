@@ -76,25 +76,42 @@ button {
 
 /* === Sections === */
 
-.contentWrapper {
+#splash .contentWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 960px;
   margin: auto;
+  grid-column-gap: 1rem;
 }
 
-#splash .contentWrapper > div {
-  padding: 2rem;
-  padding-top: 4rem;
-
+#splash .contentWrapper > div:nth-child(2) {
+  padding-top: 6rem;
+  padding-right: 3rem;
 } 
+
+#splash .contentWrapper h1 {
+  margin-bottom: -.75rem;
+}
 
 /* Splash */
 #splash {
-  height: 500px;
+  position: relative;
+  min-height: 500px;
   background: url("images/hero-bg.jpg");
   background-size: cover;
   background-position: bottom;
+}
+
+#phone {
+  text-align: right;
+  padding-right: 5em;
+}
+
+#phone img {
+  width: 200px;
+  position: relative;
+  bottom: -140px;
+  z-index: 0;
 }
 
 /* AdFormats */
@@ -102,6 +119,9 @@ button {
   height: 400px;
   text-align: center;
   padding-top: 1.75rem;
+  z-index: 1;
+  background-color: white;
+  position: relative;
 }
 
 p {
@@ -175,22 +195,10 @@ footer {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* === Navbar === */
 
-/* Add a black background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.98);
   position: fixed;
   width: 100%;
   height: var(--nav-bar-height);
