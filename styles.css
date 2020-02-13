@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color:#3e3e3e;
+  color:#505050;
   line-height: 2rem;
 }
 
@@ -246,10 +246,11 @@ h1.sectionTitle {
 }
 
 .testimonialText {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  color: #828282;
+  color: #8b8a8a;
   padding: .5rem 1rem 1rem 1rem;
+  font-weight: 200;
 }
 
 .testimonialPerson {
