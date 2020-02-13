@@ -56,7 +56,7 @@ h1.sectionTitle {
   margin-top: calc(var(--nav-bar-height) + 1.2rem);
 }
 
-#splash p {
+#splash .callToAction p {
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
@@ -154,6 +154,16 @@ h1.sectionTitle {
   margin: auto;
   box-sizing: border-box;
   padding: .5rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  cursor: crosshair;
+}
+
+.androidNotification:hover {
+  transform: scale(1.25);
+  transition: 0.2s;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+
 }
 
 .androidNotification > div {
@@ -162,13 +172,26 @@ h1.sectionTitle {
 
 .androidNotification-icon {
   position: relative;
-  top: 0px;
   display: inline-block;
+  margin-bottom: -1rem;
+  margin-left: .2rem;
 }
 
-.androidNotification-text {
-  font-size: 1px;
+.androidNotification-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .5rem;
+  text-align: left;
+  line-height: .85rem;
+  margin: .1rem;
   color: black;
+}
+
+p.androidNotification-text-cta {
+  color: gray;
+}
+
+div.androidNotification-text {
+  padding-left: .75rem;
 }
 
 /* #phone img {
