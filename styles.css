@@ -5,6 +5,11 @@ body {
   font-family: 'Muli', sans-serif; 
 }
 
+p {
+  color:#3e3e3e;
+  line-height: 2rem;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -72,6 +77,26 @@ button {
   transition: 0.125s;
 }
 
+.basicButtonInverse {
+  color: #fb542b;
+  background: none;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 2pt #fb542b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .5em;
+  padding-right: 1.6em;
+  padding-left: 1.6em;
+  border: none;
+}
+
+.basicButtonInverse:hover {
+  color: white;
+  background-color: #fb542b;
+  border-radius: 30px;
+  transition: 0.125s;
+}
 
 
 /* === Sections === */
@@ -116,16 +141,59 @@ button {
 
 /* AdFormats */
 #adFormats {
-  height: 400px;
+  max-width: 760px;
+  margin: auto;
   text-align: center;
+  padding: 2rem;
   padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
   z-index: 1;
   background-color: white;
   position: relative;
 }
 
-p {
-  color:#3e3e3e;
+#adFormats h1 {
+  margin-bottom: -.5rem;
+}
+
+#adFormatImages {
+  display: grid;
+  grid-template-areas:
+  'PC NTPSI'
+  'macOS NTPSI';
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Naming grid-template-area elements */
+#windowsNotification {
+   grid-area: PC; 
+   text-align: right;
+}
+#macOSNotification {
+   grid-area: macOS; 
+   text-align: right; 
+}
+
+#macOSNotification small {
+  padding-right: 3rem;
+  margin-top: 1rem;
+}
+
+#NTPSponsoredImage {
+   grid-area: NTPSI; 
+   text-align: left;
+}
+
+#NTPSponsoredImage small {
+  padding-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+#NTPSponsoredImage img {
+  box-shadow: 0px 0px 23.28px 0.72px rgba(0, 0, 0, 0.125);
 }
 
 /* Benefits */
