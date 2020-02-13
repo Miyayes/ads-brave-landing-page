@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color:rgb(130, 131, 148);
+  color:rgb(120, 121, 138);
   line-height: 2rem;
 }
 
@@ -130,16 +130,53 @@ h1.sectionTitle {
 }
 
 #phone {
-  text-align: right;
-  padding-right: 5em;
+  text-align: center;
+  justify-self: end;
+  margin-right: 4rem;
+  max-width: 300px;
+  min-width: 250px;
+  position: relative;
+  bottom: -130px;
+  z-index: 0;
+  background-image: url('images/phoneBody2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#phone img {
+.androidNotification {
+  background: white;
+  max-width: 216px;
+  height: 60px;
+  border-radius: 3px;
+  position: relative;
+  top: 50px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: .5rem;
+}
+
+.androidNotification > div {
+  display: inline-block;
+}
+
+.androidNotification-icon {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+}
+
+.androidNotification-text {
+  font-size: 1px;
+  color: black;
+}
+
+/* #phone img {
   width: 200px;
   position: relative;
   bottom: -140px;
   z-index: 0;
-}
+} */
 
 /* AdFormats */
 #adFormats {
@@ -319,7 +356,7 @@ h1.sectionTitle {
   top: -300px;
   border-radius: 3px;
   box-shadow: 0px 0px 23.28px 0.72px rgba(0, 0, 0, 0.11);
-  padding: 2.75rem;
+  padding: 2.5rem;
   text-align: center;
   margin: auto;
 }
@@ -330,9 +367,9 @@ h1.sectionTitle {
 }
 
 .testimonialText {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   line-height: 2rem;
-  color: #8b8a8a;
+  color:rgb(120, 121, 138);
   padding: .5rem 1rem 1rem 1rem;
   font-weight: 200;
 }
@@ -341,8 +378,9 @@ h1.sectionTitle {
   font-size: 1rem;
   text-align: center;
   margin-top: .35rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  color: #373843;
   
 }
 
