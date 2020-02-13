@@ -40,6 +40,7 @@ a:hover {
 
 small {
   display: block;
+  color: #373843;
 }
 
 button {
@@ -163,7 +164,12 @@ h1.sectionTitle {
   transform: scale(1.25);
   transition: 0.2s;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+}
 
+.androidNotification:active /* mobile touch */ {
+  transform: scale(1.25);
+  transition: 0.2s;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
 }
 
 .androidNotification > div {
@@ -193,13 +199,6 @@ p.androidNotification-text-cta {
 div.androidNotification-text {
   padding-left: .75rem;
 }
-
-/* #phone img {
-  width: 200px;
-  position: relative;
-  bottom: -140px;
-  z-index: 0;
-} */
 
 /* AdFormats */
 #adFormats {
@@ -408,9 +407,8 @@ div.androidNotification-text {
 }
 
 footer {
-  height: 80px;
-  background: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  height: 12rem;
+  background: #2c2c35;
 }
 
 /* === Navbar === */
