@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color:#505050;
+  color:rgb(130, 131, 148);
   line-height: 2rem;
 }
 
@@ -18,12 +18,14 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 2rem;
+  color: #373843;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.35rem;
+  color: #373843;
 }
 
 a { 
