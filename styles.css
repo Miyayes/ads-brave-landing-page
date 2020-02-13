@@ -163,7 +163,7 @@ h1.sectionTitle {
   'macOS NTPSI';
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -198,9 +198,91 @@ h1.sectionTitle {
 
 /* Benefits */
 #benefits {
-  height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   background: #f9f9f9;
+  text-align: center;
 }
+
+.benefitPoint h2 {
+  display: inline-block;
+}
+
+.benefitPoint .icon {
+  vertical-align: middle;
+  margin-top: -.2rem;
+  margin-right: .85rem;
+}
+
+#benefitsWrapper {
+  max-width: 768px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 0rem;
+  text-align: left;
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+} 
+
+#benefitsWrapper>div:nth-child(1) {
+  margin-bottom: 1.25rem;
+}
+
+/* #promoVideo {
+  margin-top: -4rem;
+} */
+
+.informationAssets {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  justify-items: center;
+  max-width: 768px;
+  margin: auto;
+}
+
+.informationAssets>button:nth-child(1) {
+  justify-self: end;
+}
+
+.informationAssets>button:nth-child(3) {
+  justify-self: start;
+}
+
+
+.informationButton {
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  font-size: .85rem;
+  color: gray;
+  padding: .65rem 1.25rem .65rem 1.25rem;
+  /* border: 1px gray solid; */
+  border: none;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 .75rem 0 .75rem;
+  vertical-align: middle;
+  box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.125);
+  max-width: fit-content;
+}
+
+.informationButton:hover {
+  transform: scale(1.035);
+  transition: 0.2s;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+  border: none;
+  color: #802baa;
+}
+
+.informationButton > img {
+  margin-left: .35rem;
+  opacity: .5;
+  margin-bottom: -.2rem;
+}
+
+
 
 /* Testimonials */
 #testimonialsBG {
