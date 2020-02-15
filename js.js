@@ -1,3 +1,8 @@
+window.onload = function () {
+  document.querySelector('.androidNotification').className = "androidNotification animated fadeInUp";
+  setTimeout(removeAnimationAndroidNotification, 850);
+}
+
 function navBarFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -12,7 +17,5 @@ function removeAnimationAndroidNotification() {
   document.querySelector('.androidNotification').className = "androidNotification";
   console.log("removeAnimation");
 }
-
-setTimeout(removeAnimationAndroidNotification, 850);
 
 
