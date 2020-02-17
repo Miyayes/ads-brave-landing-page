@@ -377,7 +377,7 @@ div.androidNotification-text {
   top: -300px;
   position: relative;
   text-align: center;
-  margin-bottom: -175px;
+  margin-bottom: -225px;
 }
 
 .quoteBox {
@@ -415,8 +415,16 @@ div.androidNotification-text {
 }
 
 footer {
-  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(189, 189, 189);
   background: #2c2c35;
+  padding: 1.75rem;
+  font-size: .75rem;
+}
+
+footer .footerListItems span {
+  margin-right: 1rem;
 }
 
 /* === Navbar === */
@@ -439,7 +447,6 @@ footer {
   margin-right: 2rem;
   margin-left: 1.5rem;
 }
-
 
 .accessPoints {
   margin-top: -.3rem;
