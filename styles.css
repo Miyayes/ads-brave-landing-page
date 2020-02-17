@@ -359,6 +359,13 @@ div.androidNotification-text {
   margin: auto;
 }
 
+
+#boostBusiness > small /* Min spend notice */ {
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* Brand logos */
 .quoteBox img {
   opacity: .6;
@@ -370,6 +377,7 @@ div.androidNotification-text {
   top: -300px;
   position: relative;
   text-align: center;
+  margin-bottom: -175px;
 }
 
 .quoteBox {
