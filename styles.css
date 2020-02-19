@@ -4,9 +4,16 @@
   --nav-bar-height: 50px;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body { 
   margin: 0;
   font-family: 'Muli', sans-serif; 
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -40,7 +47,7 @@ a:hover {
 
 small {
   display: block;
-  color: #373843;
+  color: rgb(120, 121, 138);
 }
 
 button {
@@ -237,36 +244,46 @@ div.androidNotification-text {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Naming grid-template-area elements */
 #windowsNotification {
    grid-area: PC; 
    text-align: right;
+   height: 120px;
 }
+
 #macOSNotification {
    grid-area: macOS; 
    text-align: right; 
+   height: 60.1px;
+   margin-right: -2px;
+  }
+
+#macOSNotification>img {
+  text-shadow: 0px 1px 5.88px 1.12px rgba(0, 0, 0, 0.18);
 }
 
-#macOSNotification small {
-  padding-right: 3rem;
-  margin-top: 1rem;
-}
 
 #NTPSponsoredImage {
    grid-area: NTPSI; 
    text-align: left;
+   height: 200px;
+}
+
+#macOSNotification small {
+  padding-right: 4rem;
+  margin-top: 1rem;
 }
 
 #NTPSponsoredImage small {
-  padding-left: 2.5rem;
+  padding-left: 3.25rem;
   margin-top: 1rem;
 }
 
 #NTPSponsoredImage img {
-  box-shadow: 0px 0px 23.28px 0.72px rgba(0, 0, 0, 0.125);
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.125);
 }
 
 /* Benefits */
@@ -340,12 +357,13 @@ div.androidNotification-text {
   vertical-align: middle;
   box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.125);
   max-width: fit-content;
+  min-width: 185px;
 }
 
 .informationButton:hover {
   transform: scale(1.04);
   transition: 0.35s;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.125);
   border: none;
 }
 
@@ -376,6 +394,9 @@ div.androidNotification-text {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   color: rgb(120, 121, 138);
+  text-align: justify;
+  text-align-last: left;
+  padding: 0 1.25rem 0 1.25rem;
 }
 
 /* Brand logos */
@@ -409,7 +430,7 @@ div.androidNotification-text {
 }
 
 .testimonialText {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 2rem;
   color:rgb(120, 121, 138);
   padding: .5rem 1rem 1rem 1rem;
@@ -423,7 +444,11 @@ div.androidNotification-text {
   font-family: 'Muli', sans-serif;
   font-weight: 600;
   color: #373843;
-  
+}
+
+#braveRewardsAds {
+  max-width: 460px;
+  width: 90%;
 }
 
 footer {
@@ -432,7 +457,12 @@ footer {
   color: rgb(189, 189, 189);
   background: #2c2c35;
   padding: 1.75rem;
+  padding-bottom: 1.5rem;
   font-size: .75rem;
+}
+
+footer img {
+  margin-top: -.25rem;
 }
 
 footer .footerListItems span {

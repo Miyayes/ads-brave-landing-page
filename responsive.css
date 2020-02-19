@@ -1,16 +1,80 @@
-@media screen and (max-width: 656px) {
+@media only screen and (max-width: 738px) {
   #splash .contentWrapper {
     grid-template-columns: 1fr;
   }
 
   #benefitsWrapper {
     grid-template-columns: 1fr;
-  }  
+  }
 
   .benefitPoint p {
     margin-top: 0;
     padding-left: 2.75rem;
   }
-
-
 }
+
+@media only screen and (max-width: 700px) {
+    #adFormatImages {
+      display: block;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+
+    #adFormatImages div {
+      text-align: center;
+      padding: 0;
+      height: 100%;
+    }
+
+    #adFormatImages div img {
+      text-align: center;
+      width: 100%;
+      max-width: 350px;
+      height: initial;
+    }
+
+    #adFormatImages div>small {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      margin-top: .75rem;
+      margin-bottom: 1rem;
+    }
+
+    #macOSNotification>img {
+      display: none;
+    }
+
+    #macOSNotification {
+      margin-bottom: 1.5rem;
+    }
+
+    .informationAssets {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .informationAssets>button:nth-child(1) {
+      justify-self: initial;
+    }
+    
+    .informationAssets>button:nth-child(3) {
+      justify-self: initial;
+    }
+
+    #boostBusiness /* Min spend notice */ {
+      padding-top: .5rem;
+    }
+
+    .brandLogos>img:nth-child(4), .brandLogos>img:nth-child(5) /* Hide some brand logos for space */ {
+      display: none;
+    }
+}
+
+
+  @media only screen and (max-width: 656px) {
+    #splash .contentWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
