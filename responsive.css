@@ -7,6 +7,26 @@
     grid-template-columns: 1fr;
   }
 
+  /* Flip column order */ 
+  #splash .contentWrapper > div:nth-child(1) {
+    order: 2;
+    justify-self: center;
+    margin-top: -15rem;
+  }
+
+  #splash .contentWrapper > div:nth-child(2) {
+    order: 1;
+    margin: auto;
+    padding: 14%;
+  }
+  /* End flip column order */
+
+  #phone {
+    margin: 0;
+    justify-self: center;
+    bottom: -13rem;
+  }
+
   .benefitPoint p {
     margin-top: 0;
     padding-left: 2.75rem;
