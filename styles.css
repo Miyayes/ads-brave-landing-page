@@ -72,6 +72,7 @@ h1.sectionTitle {
 
 #splash .callToAction p.watchVideo {
   font-size: 1rem;
+  visibility: hidden;
 }
 
 #splash .callToAction p.watchVideo>img {
@@ -247,6 +248,11 @@ div.androidNotification-text {
   margin-bottom: 5rem;
 }
 
+#adFormatImages img:hover {
+  transform: scale(1.5);
+  transition: 0.4s;
+}
+
 /* Naming grid-template-area elements */
 #windowsNotification {
    grid-area: PC; 
@@ -348,16 +354,15 @@ div.androidNotification-text {
   font-size: .85rem;
   color: gray;
   padding: .65rem 1.25rem .65rem 1.25rem;
-  /* border: 1px gray solid; */
-  border: none;
+  border: 1px rgb(230, 230, 230) solid;
   border-radius: .5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 .75rem 0 .75rem;
   vertical-align: middle;
-  box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.125);
   max-width: fit-content;
   min-width: 185px;
+  background: white;
 }
 
 .informationButton:hover {
@@ -390,7 +395,7 @@ div.androidNotification-text {
 }
 
 #boostBusiness > small /* Min spend notice */ {
-  line-height: 1.5rem;
+  line-height: 1.35rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   color: rgb(120, 121, 138);
@@ -536,7 +541,7 @@ footer .footerListItems span {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
