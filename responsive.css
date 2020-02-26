@@ -72,8 +72,7 @@
     }
 
     .informationAssets {
-      grid-template-columns: 50% 50%;
-      grid-row-gap: 1.75rem;
+      grid-template-columns: 1fr;
       margin-top: 1.5rem;
     }
 
@@ -101,6 +100,17 @@
     }
   }
 
+  @media only screen and (max-width: 480px) {
+    footer { 
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 1.75rem;
+      text-align: center;
+    }
+  }
+
+  
+
   /* Mobile L */
   @media only screen and (max-width: 425px) {
     #splash h1 {
@@ -108,6 +118,6 @@
     }
 
     .callToAction {
-      padding: 1rem;youtu
+      padding: 1rem;
     }
   }
