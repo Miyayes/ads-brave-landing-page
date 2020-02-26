@@ -24,7 +24,7 @@
   #phone {
     margin: 0;
     justify-self: center;
-    bottom: -13rem;
+    bottom: -11.5rem;
   }
 
   .benefitPoint p {
@@ -34,6 +34,8 @@
 }
 
 @media only screen and (max-width: 700px) {
+
+
     #adFormatImages {
       display: block;
       margin-bottom: 2rem;
@@ -70,7 +72,7 @@
     }
 
     .informationAssets {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       grid-row-gap: 1.75rem;
       margin-top: 1.5rem;
     }
@@ -96,5 +98,16 @@
   @media only screen and (max-width: 656px) {
     #splash .contentWrapper {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* Mobile L */
+  @media only screen and (max-width: 425px) {
+    #splash h1 {
+      font-size: 1.8rem;
+    }
+
+    .callToAction {
+      padding: 1rem;youtu
     }
   }
