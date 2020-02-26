@@ -7,13 +7,10 @@
   width: 100%;
   z-index: 3;
   font-weight: 600;
-  max-height: 70px;
 }
 
 .header ul {
-  position: relative;
-  vertical-align: middle;
-  margin: 1rem;
+  margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
@@ -22,17 +19,14 @@
 
 .header li a {
   display: block;
+  margin-top: 5px;
+  padding: 20px;
   text-decoration: none;
-  line-height: 2.5rem;
-  margin-right: 1.75rem;
-}
-
-.header li a button {
-  margin-right: -.75rem;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
+  background-color: lightgray;
 }
 
 .header #logo {
@@ -120,7 +114,9 @@
   .header li {
     float: left;
   }
-
+  .header li a {
+    padding: 20px 30px;
+  }
   .header .menu {
     clear: none;
     float: right;

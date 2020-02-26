@@ -58,6 +58,7 @@ h1.sectionTitle {
   margin-bottom: -.75rem;
 }
 
+
 #splash h1 {
   color: white;
   margin-top: calc(var(--nav-bar-height) + 1.2rem);
@@ -120,11 +121,6 @@ h1.sectionTitle {
   background-color: #fb542b;
   border-radius: 30px;
   transition: 0.125s;
-}
-
-#logo:hover {
-  opacity: 0.75;
-  transition: 0.4s;
 }
 
 
@@ -392,18 +388,12 @@ div.androidNotification-text {
 }
 
 #boostBusiness > small /* Min spend notice */ {
-  background: #fff4f1;
-  border: 1px solid #ffe9e2;
-  border-radius: 6px;
-
   line-height: 1.45rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   color: rgb(120, 121, 138);
   text-align: left;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 1.25rem 0 1.25rem;
 }
 
 /* Brand logos */
@@ -460,7 +450,7 @@ div.androidNotification-text {
 }
 
 #finalStartNow {
-  margin: 1rem 0 1rem 0;
+  margin-top: .75rem;
 }
 
 footer {
