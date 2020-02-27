@@ -19,14 +19,14 @@
 
 .header li a {
   display: block;
-  margin-top: 5px;
   padding: 20px;
   text-decoration: none;
+  line-height: 2.75rem; 
+  margin-right: 1.25rem;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: lightgray;
 }
 
 .header #logo {
@@ -110,12 +110,21 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
+
+  #navBarStartNow {
+    display: inline-block;
+  }
+
+  #navBarStartNow-text {
+    display: none;
+  }
+
   .header li {
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 13px;
   }
   .header .menu {
     clear: none;
