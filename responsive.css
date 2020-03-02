@@ -1,4 +1,5 @@
 @media only screen and (max-width: 738px) {
+
   #splash .contentWrapper {
     grid-template-columns: 1fr;
   }
@@ -17,7 +18,8 @@
   #splash .contentWrapper > div:nth-child(2) {
     order: 1;
     margin: auto;
-    padding: 12%;
+    padding: 3%;
+    box-sizing: border-box;
   }
   /* End flip column order */
 
@@ -111,7 +113,7 @@
 
   
 
-  /* Mobile L */
+  /* Mobile L  425px */
   @media only screen and (max-width: 425px) {
     #splash h1 {
       font-size: 1.8rem;
@@ -119,5 +121,100 @@
 
     .callToAction {
       padding: 1rem;
+    }
+
+    section#benefits {
+      padding: 2rem;
+    }
+
+    .quoteBox {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  /* Mobile M 375px */
+  @media only screen and (max-width: 375px) {
+    #boostBusiness h1 {
+      font-size: 1.95rem;
+    }
+
+    #integrityPoint {
+      width: 26px;
+      margin-right: 0.85rem;
+    }
+
+    #integrityPoint ~ h2 {
+      font-size: 1.3rem;
+    }
+
+    #empoweredPoint {
+      width: 30px;
+      margin-right: 0.5rem;
+    }
+
+    .quoteBox {
+      margin-bottom: 2.5rem;
+      padding: 2rem;
+    }
+
+    .testimonialText {
+      font-size: 1rem;
+    }
+
+
+  }
+
+  /* Mobile S 320px */
+  @media only screen and (max-width: 320px) {
+
+    #boostBusiness h1 { 
+      font-size: 1.85rem;
+    }
+
+    .benefitPoint .icon {
+      display: none;
+    }
+
+    .benefitPoint h2 {
+      font-size: 1.25rem;
+    }
+
+    .benefitPoint p {
+      padding-left: 0;
+    }
+
+    #benefits {
+      padding-right: 1.75rem;
+      padding-left: 1.75rem;
+      padding-bottom: 2rem;
+    }
+
+    #benefitsWrapper {
+      margin-bottom: 2rem;
+    }
+
+    .quoteBox {
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonialText {
+      font-size: .95rem;
+      line-height: 1.85rem;
+      padding: 0;
+    }
+
+
+    .testimonialPerson {
+      margin-top: 1.25rem;
+    }
+
+    footer {
+      padding: 1rem;
+      padding-top: 1.5rem;
+    }
+
+    footer .footerListItems span:last-child {
+      margin-right: 0;
     }
   }

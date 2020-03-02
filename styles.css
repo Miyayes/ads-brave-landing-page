@@ -2,6 +2,7 @@
 
 :root {
   --nav-bar-height: 50px;
+  --brave-orange: #fb542b;
 }
 
 html {
@@ -37,7 +38,7 @@ h2 {
 
 a { 
   text-decoration: none;
-  color: #fb542b;
+  color: var(--brave-orange);
 }
 
 a:hover {
@@ -93,7 +94,7 @@ h1.sectionTitle {
   font-weight: 600;
   font-size: 1rem;
   color: white;
-  background-color: #fb542b;
+  background-color: var(--brave-orange);
   padding: .5em;
   padding-right: 1.6em;
   padding-left: 1.6em;
@@ -102,18 +103,18 @@ h1.sectionTitle {
 }
 
 .basicButton:hover {
-  color: #fb542b;
+  color: var(--brave-orange);
   background: none;
   border-radius: 30px;
-  box-shadow: inset 0 0 0 2pt #fb542b;
+  box-shadow: inset 0 0 0 2pt var(--brave-orange);
   transition: 0.125s;
 }
 
 .basicButtonInverse {
-  color: #fb542b;
+  color: var(--brave-orange);
   background: none;
   border-radius: 30px;
-  box-shadow: inset 0 0 0 2pt #fb542b;
+  box-shadow: inset 0 0 0 2pt var(--brave-orange);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -125,7 +126,7 @@ h1.sectionTitle {
 
 .basicButtonInverse:hover {
   color: white;
-  background-color: #fb542b;
+  background-color: var(--brave-orange);
   border-radius: 30px;
   transition: 0.125s;
 }
@@ -329,6 +330,16 @@ div.androidNotification-text {
   margin-bottom: 1.25rem;
 }
 
+#integrityPoint {
+  width: 30px;
+  margin-right: 0.6rem;
+}
+
+#empoweredPoint {
+  width: 36px;
+  margin-right: 0.3rem;
+}
+
 /* #promoVideo {
   margin-top: -4rem;
 } */
@@ -398,7 +409,7 @@ div.androidNotification-text {
   line-height: 1.45rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
-  color: rgb(120, 121, 138);
+  color: rgb(206, 133, 112);
   text-align: left;
   padding: 0 1.25rem 0 1.25rem;
   background: #fff4f1;
@@ -432,6 +443,7 @@ div.androidNotification-text {
   padding: 2.5rem;
   text-align: center;
   margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .quoteBoxWrapper {
@@ -479,6 +491,11 @@ footer {
 
 footer img {
   margin-top: -.25rem;
+}
+
+footer img:hover {
+  opacity: 0.7;
+  transition: 0.15s;
 }
 
 footer .footerListItems span {
