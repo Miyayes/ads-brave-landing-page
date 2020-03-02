@@ -19,6 +19,7 @@
     order: 1;
     margin: auto;
     padding: 15%;
+    padding-bottom: 9%;
     box-sizing: border-box;
   }
   /* End flip column order */
@@ -116,7 +117,7 @@
   /* Mobile L  425px */
   @media only screen and (max-width: 425px) {
     #splash h1 {
-      font-size: 1.8rem;
+      font-size: 2.6rem;
     }
 
     .callToAction {
@@ -132,6 +133,14 @@
 
     .quoteBox {
       margin-bottom: 2.5rem;
+    }
+
+    #boostBusiness {
+      padding: 1.95rem
+    }
+
+    #boostBusiness h1 {
+      font-size: 2.25rem;
     }
   }
 
@@ -184,7 +193,7 @@
   @media only screen and (max-width: 320px) {
 
     #boostBusiness h1 { 
-      font-size: 1.85rem;
+      font-size: 1.75rem;
     }
 
     .benefitPoint .icon {

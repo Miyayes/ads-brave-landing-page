@@ -2,7 +2,8 @@
 
 :root {
   --nav-bar-height: 50px;
-  --brave-orange: #fb542b;
+  /* --brave-orange: #fb542b; */
+  --brave-orange: #fe5025;
 }
 
 html {
@@ -213,7 +214,7 @@ h1.sectionTitle {
 
 .androidNotification-text p {
   font-family: 'Roboto', sans-serif;
-  font-size: .5rem;
+  font-size: .575rem;
   text-align: left;
   line-height: .85rem;
   margin: .1rem;
@@ -225,7 +226,7 @@ p.androidNotification-text-cta {
 }
 
 div.androidNotification-text {
-  padding-left: .75rem;
+  padding-left: .65rem;
 }
 
 /* AdFormats */
@@ -409,7 +410,7 @@ div.androidNotification-text {
   line-height: 1.45rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
-  color: rgb(206, 133, 112);
+  color: rgb(241, 106, 68);
   text-align: left;
   padding: 0 1.25rem 0 1.25rem;
   background: #fff4f1;
