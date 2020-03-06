@@ -177,17 +177,36 @@ h1.sectionTitle {
 
 .androidNotification {
   background: white;
-  max-width: 216px;
-  height: 65px;
+  max-width: 275px; /*216px*/
+  height: 75px;
   border-radius: 3px;
   position: relative;
   top: 50px;
   margin: auto;
   box-sizing: border-box;
-  padding: .5rem;
+  padding: .55rem;
+  padding-top: .85rem;
   display: grid;
   grid-template-columns: auto auto;
   cursor: crosshair;
+}
+
+.androidNotification-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .7rem;
+  text-align: left;
+  line-height: .95rem;
+  margin: .1rem;
+  color: black;
+}
+
+p.androidNotification-text-cta {
+  color: gray;
+  margin-top: 3px;
+}
+
+div.androidNotification-text {
+  padding-left: .65rem;
 }
 
 .androidNotification:hover {
@@ -211,23 +230,6 @@ h1.sectionTitle {
   display: inline-block;
   margin-bottom: -1.1rem;
   margin-left: .2rem;
-}
-
-.androidNotification-text p {
-  font-family: 'Roboto', sans-serif;
-  font-size: .65rem;
-  text-align: left;
-  line-height: .95rem;
-  margin: .1rem;
-  color: black;
-}
-
-p.androidNotification-text-cta {
-  color: gray;
-}
-
-div.androidNotification-text {
-  padding-left: .65rem;
 }
 
 /* AdFormats */
