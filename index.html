@@ -82,8 +82,8 @@
     <p>Communicate your message via attention-grabbing mobile (Android, iOS) and desktop notifications (on PC, MacOS
       and&nbsp;Linux).</p>
     <div id="adFormatImages">
-      <div id="windowsNotification"><img src="images/PC-notification-vector.svg" height="120px"
-          alt="Windows system notification ad format example.">
+      <div id="windowsNotification"><a href="images/PC-notification-vector.svg" title="Caption for gallery item 1"><img src="images/PC-notification-vector.svg" height="120px"
+          alt="Windows system notification ad format example."></a>
       </div>
       <div id="macOSNotification">
         <img src="images/MacOS-notification-vector.svg" width="298px"
@@ -91,8 +91,8 @@
         <small>Desktop system notification</small>
       </div>
       <div id="NTPSponsoredImage">
-        <img src="images/NTPSI.jpg" height="200px"
-          alt="New tab page sponsored background image premium ad format example.">
+        <a href="images/NTPSI.jpg" title="Caption for gallery item 1"><img src="images/NTPSI.jpg" height="200px"
+          alt="New tab page sponsored background image premium ad format example."></a>
         <small>New Tab Page sponsored image</small>
       </div>
     </div>
@@ -208,6 +208,12 @@
 
   <script src="js.js" async defer></script>
   <script src="drift-chatbox.js"></script>
+  <script src="simpleLightbox.min.js"></script>
+  <link rel="stylesheet" href="simpleLightbox.min.css">
+  <script> 
+    var SimpleLightbox = window.SimpleLightbox;
+    new SimpleLightbox({elements: '#adFormatImages a'});
+  </script>
 </body>
 
 </html>
