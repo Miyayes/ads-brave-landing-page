@@ -351,7 +351,7 @@ div.androidNotification-text {
 
 .informationAssets {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto; /* switch to 3 when other assets available */
   grid-column-gap: 1.25rem;
   justify-items: center;
   max-width: 768px;
@@ -359,6 +359,7 @@ div.androidNotification-text {
 }
 
 .informationButton {
+  max-width: 20rem;
   font-family: 'Muli', sans-serif;
   font-weight: 600;
   font-size: .85rem;
