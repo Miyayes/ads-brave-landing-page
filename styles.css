@@ -359,7 +359,6 @@ div.androidNotification-text {
 }
 
 .informationButton {
-  max-width: 20rem;
   font-family: 'Muli', sans-serif;
   font-weight: 600;
   font-size: .85rem;
@@ -371,7 +370,7 @@ div.androidNotification-text {
   letter-spacing: 1px;
   margin: .75rem .75rem .75rem .75rem;
   vertical-align: middle;
-  width: 100%;
+  width: 16rem;
   background: white;
   display: inline-block;
   height: 4rem;
