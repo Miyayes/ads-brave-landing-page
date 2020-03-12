@@ -40,6 +40,7 @@ h2 {
 a { 
   text-decoration: none;
   color: var(--brave-orange);
+  cursor: pointer !important;
 }
 
 a:hover {
@@ -258,6 +259,12 @@ div.androidNotification-text {
   grid-row-gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
+}
+
+#adFormatImages img:hover {
+  transition: 0.2s;
+  transform: scale(1.075);
+  cursor: pointer !important;
 }
 
 /* Naming grid-template-area elements */
@@ -482,6 +489,12 @@ div.androidNotification-text {
 #finalStartNow {
   margin-top: 2.5rem;
   margin-bottom: .75rem;
+}
+
+iframe#startNowForm {
+  width: 100%;
+  height: 100vh;
+  border: none;
 }
 
 footer {

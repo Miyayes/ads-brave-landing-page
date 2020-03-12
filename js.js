@@ -4,8 +4,6 @@ window.onload = setTimeout(function () {
   
   //Strip link to Start Now form if JS enabled
   document.querySelectorAll('.startNowLink').forEach(function (a) {
-    console.log("Strip links for Start Now.");
-    console.log(a);
     a.removeAttribute('href');
   });
 
